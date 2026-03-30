@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Deployment
+metadata:
+   name: GRPCServerDeployment
+spec:
+  replicas: 1
+  selector:
+     matchLabels:
+         app: GRPCServerApp
+  template:
+    metadata:
+       labels:
+         app: GRPCServerApp
+    spec:
+       containers:
+          - name: grpcservercontainer
+            image: ghcr.io/vinaytagore-developer/grpcserver:v1
