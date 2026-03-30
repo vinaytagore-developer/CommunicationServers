@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-   name: GRPCServerDeployment
+   name: grpcserverdeployment
 spec:
   replicas: 1
   selector:
      matchLabels:
-         app: GRPCServerApp
+         app: grpcserverapp
   template:
     metadata:
        labels:
-         app: GRPCServerApp
+         app: grpcserverapp
     spec:
        containers:
           - name: grpcservercontainer
