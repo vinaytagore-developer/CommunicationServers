@@ -16,4 +16,4 @@ spec:
           - name: ghcr-secret
        containers:
           - name: grpcservercontainer
-            image: ghcr.io/vinaytagore-developer/grpcserver:v1
+            image: ghcr.io/vinaytagore-developer/grpcserver:v2
