@@ -19,3 +19,5 @@ COPY --from=build /app/publish .
 
 # Expose port
 EXPOSE 80
+
+ENTRYPOINT "dotnet" "GRPCServer.dll"
