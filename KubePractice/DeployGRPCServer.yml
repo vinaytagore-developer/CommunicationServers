@@ -12,6 +12,8 @@ spec:
        labels:
          app: grpcserverapp
     spec:
+       imagePullSecrets:
+          - name: ghcr-secret
        containers:
           - name: grpcservercontainer
             image: ghcr.io/vinaytagore-developer/grpcserver:v1
